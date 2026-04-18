@@ -77,7 +77,7 @@ h2::after {
   margin-right: -50%;
 }
 
-main p {
+main>p {
   text-align: center;
   font-size: 1.3em;
   margin-bottom: 1em;
@@ -126,7 +126,7 @@ header {
   margin: 2em 1em 0;
   border: var(--accent-secondary) solid 2px;
   border-radius: 10px;
-  padding: 0.5em;
+  padding: 0.5em 1em;
 }
 
 .card h3 {
@@ -135,7 +135,13 @@ header {
 }
 
 .card p {
-  margin: 0.5em 1em 0;
+  margin: 0.5em 0 0.5em;
+  text-align: justify;
+}
+
+.card .ref {
+  margin-top: 0.3em;
+  text-align: right;
 }
 
 /* #endregion MAIN */
