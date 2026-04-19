@@ -10,6 +10,8 @@
 
 :root {
   --bg-color: #220d3e;
+  --bg-color-dark: #1b0b2f;
+  --bg-color-light: #512e80;
   --text-color: white;
   /* --link-color: #ae56fb; */
   --accent: #f26df9;
@@ -96,7 +98,7 @@ a {
 /* #region HEADER */
 
 header {
-  padding-top: 5em;
+  padding-top: 3em;
 }
 
 #p-img-container {
@@ -134,8 +136,21 @@ header {
   font-size: 1.5em;
 }
 
-.card p {
-  margin: 0.5em 0 0.5em;
+.card .label-container {
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+.label {
+  font-family: monospace;
+  background-color: var(--bg-color-light);
+  margin: 0 0.2em;
+  padding: 0.3em 0.8em;
+  border-radius: 1em;
+}
+
+.card .desc {
+  margin-bottom: 0.5em;
   text-align: justify;
 }
 
@@ -146,23 +161,38 @@ header {
 
 /* #endregion MAIN */
 
+/* ====================================== */
+
+/* #region FOOTER */
+
+footer {
+  background-color: var(--bg-color-dark);
+  margin-top: 2em;
+  padding: 0.8em;
+  text-align: center;
+}
+
+/* #endregion FOOTER */
+
+/* ====================================== */
+
 @supports selector(::-webkit-scrollbar) {
   ::-webkit-scrollbar {
     width: 10px;
   }
 
   ::-webkit-scrollbar-track {
-    background: transparent;
+    background: var(--bg-color-dark);
   }
 
   ::-webkit-scrollbar-thumb {
     background-color: var(--accent-secondary);
     border-radius: 20px;
-    border: 3px solid transparent;
+    border: 3px solid var(--bg-color-dark);
   }
 
   ::-webkit-scrollbar-button:single-button {
-    background-color: transparent;
+    background-color: var(--bg-color-dark);
     display: block;
     border-style: solid;
     height: 13px;
