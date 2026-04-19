@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* font-family: 'Inter', sans-serif; */
+  font-family: 'Vend Sans', sans-serif;
   line-height: 1.5em;
 }
 
@@ -20,6 +20,11 @@
   --bg-anim-duration: 15s
 }
 
+@font-face {
+  font-family: "Vend Sans";
+  src: url("../font/Vend_Sans/VendSans-VariableFont_wght.ttf");
+}
+
 /* ====================================== */
 
 /* #region GENERAL CLASSES */
@@ -29,6 +34,7 @@ html {
 }
 
 body {
+  background-color: var(--bg-color);
   background: linear-gradient(134deg, var(--bg-color), var(--bg-color2));
   background-size: 400% 400%;
   -webkit-animation: BackgroundAnimation var(--bg-anim-duration) ease infinite;
@@ -133,6 +139,8 @@ header {
   border: var(--accent-secondary) solid 2px;
   border-radius: 10px;
   padding: 0.5em 1em;
+  background-color: var(--bg-color-dark);
+  box-shadow: 5px 5px 5px 0px var(--bg-color-dark);
 }
 
 .card h3 {
