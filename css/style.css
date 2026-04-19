@@ -10,13 +10,14 @@
 
 :root {
   --bg-color: #220d3e;
+  --bg-color2: #3e0d3d;
   --bg-color-dark: #1b0b2f;
   --bg-color-light: #512e80;
   --text-color: white;
-  /* --link-color: #ae56fb; */
   --accent: #f26df9;
   --accent-secondary: #a594f9;
-  /* --link-color: #809bce; */
+
+  --bg-anim-duration: 15s
 }
 
 /* ====================================== */
@@ -28,8 +29,11 @@ html {
 }
 
 body {
-  background-color: var(--bg-color);
-  min-height: 100vh;
+  background: linear-gradient(134deg, var(--bg-color), var(--bg-color2));
+  background-size: 400% 400%;
+  -webkit-animation: BackgroundAnimation var(--bg-anim-duration) ease infinite;
+  -moz-animation: BackgroundAnimation var(--bg-anim-duration) ease infinite;
+  animation: BackgroundAnimation var(--bg-anim-duration) ease infinite;
 }
 
 header,
@@ -175,6 +179,48 @@ footer {
 /* #endregion FOOTER */
 
 /* ====================================== */
+
+@-webkit-keyframes BackgroundAnimation {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes BackgroundAnimation {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes BackgroundAnimation {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
 
 @supports selector(::-webkit-scrollbar) {
   ::-webkit-scrollbar {
