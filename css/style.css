@@ -133,6 +133,8 @@ header {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   width: 45%;
   min-width: 30em;
   margin: 2em 1em 0;
@@ -164,11 +166,27 @@ header {
 .card .desc {
   margin-bottom: 0.5em;
   text-align: justify;
+  flex-grow: 1;
+}
+
+.card .info,
+.info .ref,
+.info .date {
+  margin-top: 0.3em;
 }
 
 .card .ref {
-  margin-top: 0.3em;
+  /* margin-top: 0.3em; */
   text-align: right;
+}
+
+.card .ref:last-of-type {
+  float: right;
+  /* background-color: red; */
+}
+
+.card .date {
+  float: left;
 }
 
 /* #endregion MAIN */
