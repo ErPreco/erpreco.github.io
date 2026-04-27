@@ -1,0 +1,21 @@
+#p-img {
+  height: 8em;
+}
+
+main {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.card .ref,
+.card .date {
+  width: 100%;
+}
+
+.card .ref {
+  text-align: left;
+}
+
+.card .date {
+  margin-top: 0.8em;
+}

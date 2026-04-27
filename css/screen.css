@@ -52,7 +52,7 @@ main {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 3em;
+  padding: 3em;
 }
 
 h1 {
@@ -76,7 +76,7 @@ h2::after {
   position: relative;
   vertical-align: middle;
   width: 25vw;
-  max-width: 12em;
+  max-width: 10em;
 }
 
 h2::before {
@@ -87,6 +87,14 @@ h2::before {
 h2::after {
   left: 0.5em;
   margin-right: -50%;
+}
+
+@media screen and (max-width: 768px) {
+
+  h2::before,
+  h2::after {
+    width: 15vw;
+  }
 }
 
 main>p {
@@ -176,13 +184,11 @@ header {
 }
 
 .card .ref {
-  /* margin-top: 0.3em; */
   text-align: right;
 }
 
 .card .ref:last-of-type {
   float: right;
-  /* background-color: red; */
 }
 
 .card .date {
