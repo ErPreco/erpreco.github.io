@@ -12,9 +12,8 @@
   --bg-color: #220d3e;
   --bg-color2: #3e0d3d;
   --bg-color-dark: #1b0b2f;
-  --bg-color-light: #512e80;
   --text-color: white;
-  --accent: #f26df9;
+  --accent: #e69a3d;
   --accent-secondary: #a594f9;
 
   --bg-anim-duration: 15s
@@ -165,13 +164,14 @@ header {
 
 .label {
   font-family: monospace;
-  background-color: var(--bg-color-light);
-  margin: 0 0.2em;
+  margin: 0.2em;
   padding: 0.3em 0.8em;
+  border: 2px solid var(--accent);
   border-radius: 1em;
 }
 
 .card .desc {
+  margin-top: 0.5em;
   margin-bottom: 0.5em;
   text-align: justify;
   flex-grow: 1;
