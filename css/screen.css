@@ -164,7 +164,7 @@ header {
 
 .label {
   font-family: monospace;
-  margin: 0.2em;
+  margin: 0 0.2em;
   padding: 0.3em 0.8em;
   border: 2px solid var(--accent);
   border-radius: 1em;
