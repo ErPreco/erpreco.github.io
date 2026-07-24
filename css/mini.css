@@ -7,6 +7,16 @@ main {
   padding-right: 0;
 }
 
+.card .label-container {
+  margin-bottom: 0;
+}
+
+.card .label {
+  display: inline-block;
+  margin-bottom: 0.5em;
+  padding: 0.1em 0.8em;
+}
+
 .card .ref,
 .card .date {
   width: 100%;
