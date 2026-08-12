@@ -60,14 +60,21 @@ h1 {
   font-size: 2.3em;
 }
 
-h2 {
+.collapsible {
+  width: 100%;
   text-align: center;
-  font-size: 1.8em;
+  color: var(--text-color);
+  font-size: 1.6em;
+  font-weight: bold;
   margin-top: 1.3em;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
-h2::before,
-h2::after {
+.collapsible::before,
+.collapsible::after {
   background-color: var(--text-color);
   content: "";
   display: inline-block;
@@ -78,22 +85,29 @@ h2::after {
   max-width: 10em;
 }
 
-h2::before {
+.collapsible::before {
   right: 0.5em;
   margin-left: -50%;
 }
 
-h2::after {
+.collapsible::after {
   left: 0.5em;
   margin-right: -50%;
 }
 
 @media screen and (max-width: 768px) {
 
-  h2::before,
-  h2::after {
+  .collapsible::before,
+  .collapsible::after {
     width: 15vw;
   }
+}
+
+
+.collapse-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 main>p {

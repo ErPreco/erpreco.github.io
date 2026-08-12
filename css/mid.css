@@ -1,5 +1,5 @@
-h2::before,
-h2::after {
+.collapsible::before,
+.collapsible::after {
   width: 0;
 }
 
