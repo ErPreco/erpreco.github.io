@@ -314,6 +314,5 @@ footer {
 @supports not selector(::-webkit-scrollbar) {
   * {
     scrollbar-color: var(--accent) transparent;
-    scrollbar-width: thin;
   }
 }
