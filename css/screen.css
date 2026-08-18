@@ -82,8 +82,8 @@ h1 {
   height: 1px;
   position: relative;
   vertical-align: middle;
-  width: 25vw;
-  max-width: 10em;
+  width: 22vw;
+  max-width: 11em;
 }
 
 .collapsible::before {
