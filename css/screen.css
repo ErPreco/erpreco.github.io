@@ -61,6 +61,12 @@ h1 {
   font-size: 2.3em;
 }
 
+h2 {
+  text-align: center;
+  font-size: 1.8em;
+  margin-top: 2em;
+}
+
 .collapsible {
   width: 100%;
   text-align: center;
@@ -74,6 +80,8 @@ h1 {
   outline: none;
 }
 
+h2::before,
+h2::after,
 .collapsible::before,
 .collapsible::after {
   background-color: var(--text-color);
@@ -86,6 +94,14 @@ h1 {
   max-width: 11em;
 }
 
+h2::before {
+  margin-right: 0.5em;
+}
+
+h2::after {
+  margin-left: 0.5em;
+}
+
 .collapsible::before {
   margin-left: -50%;
 }
@@ -96,6 +112,8 @@ h1 {
 
 @media screen and (max-width: 768px) {
 
+  h2::before,
+  h2::after,
   .collapsible::before,
   .collapsible::after {
     width: 15vw;
