@@ -30,6 +30,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--bg-color-dark);
 }
 
 body {
@@ -266,7 +267,7 @@ footer {
   ::-webkit-scrollbar-thumb {
     background-color: var(--accent-secondary);
     border-radius: 20px;
-    border: 3px solid var(--bg-color-dark);
+    border: 2px solid var(--bg-color-dark);
   }
 
   ::-webkit-scrollbar-button:single-button {
@@ -299,6 +300,5 @@ footer {
 @supports not selector(::-webkit-scrollbar) {
   * {
     scrollbar-color: var(--accent) transparent;
-    scrollbar-width: thin;
   }
 }
