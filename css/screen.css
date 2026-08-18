@@ -87,12 +87,10 @@ h1 {
 }
 
 .collapsible::before {
-  right: 0.5em;
   margin-left: -50%;
 }
 
 .collapsible::after {
-  left: 0.5em;
   margin-right: -50%;
 }
 
@@ -104,6 +102,16 @@ h1 {
   }
 }
 
+.arrow {
+  font-size: 0.8em;
+  padding: 0 0.5em;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.collapsible.active .arrow {
+  transform: rotate(180deg);
+}
 
 .collapse-content {
   max-height: 0;
