@@ -160,13 +160,15 @@ header {
 
 .card .label-container {
   text-align: center;
-  margin: 0.5em 0;
+  margin-top: 0.5em;
 }
 
 .label {
+  white-space: nowrap;
   font-family: monospace;
-  margin: 0 0.2em;
-  padding: 0.3em 0.8em;
+  display: inline-block;
+  margin: 0 0.2em 0.5em;
+  padding: 0.1em 0.8em;
   border: 2px solid var(--accent);
   border-radius: 1em;
 }
