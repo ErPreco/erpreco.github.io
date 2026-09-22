@@ -138,6 +138,7 @@ header {
 .card {
   display: flex;
   flex-direction: column;
+  margin-top: 2em;
   border: var(--accent-secondary) solid 2px;
   border-radius: 10px;
   padding: 0.5em 1em;
@@ -146,7 +147,8 @@ header {
 }
 
 .thesis-card {
-  margin: 0 5%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 h3 {
@@ -203,7 +205,9 @@ h3 {
 .card {
   width: 45%;
   min-width: 30em;
-  margin: 2em 1em 0;
+  /* margin: 2em 1em 0; */
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 /* #endregion MAIN */
