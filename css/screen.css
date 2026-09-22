@@ -134,18 +134,10 @@ header {
 
 /* #region MAIN */
 
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
+.thesis-card,
 .card {
   display: flex;
   flex-direction: column;
-  width: 45%;
-  min-width: 30em;
-  margin: 2em 1em 0;
   border: var(--accent-secondary) solid 2px;
   border-radius: 10px;
   padding: 0.5em 1em;
@@ -153,12 +145,16 @@ header {
   box-shadow: 5px 5px 5px 0px var(--bg-color-dark);
 }
 
-.card h3 {
+.thesis-card {
+  margin: 0 5%;
+}
+
+h3 {
   text-align: center;
   font-size: 1.5em;
 }
 
-.card .label-container {
+.label-container {
   text-align: center;
   margin-top: 0.5em;
 }
@@ -173,29 +169,41 @@ header {
   border-radius: 1em;
 }
 
-.card .desc {
+.desc {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   text-align: justify;
   flex-grow: 1;
 }
 
-.card .info,
+.info,
 .info .ref,
 .info .date {
   margin-top: 0.3em;
 }
 
-.card .ref {
+.ref {
   text-align: right;
 }
 
-.card .ref:last-of-type {
+.ref:last-of-type {
   float: right;
 }
 
-.card .date {
+.date {
   float: left;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: 45%;
+  min-width: 30em;
+  margin: 2em 1em 0;
 }
 
 /* #endregion MAIN */

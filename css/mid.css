@@ -13,6 +13,10 @@ main>p {
   margin-right: 1em;
 }
 
+.thesis-card {
+  margin: 0 3%;
+}
+
 .card {
   width: 100%;
   min-width: 0;
