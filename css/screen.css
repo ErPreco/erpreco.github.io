@@ -9,12 +9,12 @@
 }
 
 :root {
-  --bg-color: #220d3e;
-  --bg-color2: #3e0d3d;
-  --bg-color-dark: #1b0b2f;
-  --text-color: white;
-  --accent: #e69a3d;
-  --accent-secondary: #a594f9;
+  --bg-color: #fefff6;
+  --bg-color-dark: #d3f2b4;
+  --bg-card: #f9fae9;
+  --text-color: rgb(85, 39, 39);
+  --accent: #00ae00;
+  --accent-secondary: #0d710b;
 
   --bg-anim-duration: 15s
 }
@@ -35,11 +35,11 @@ html {
 
 body {
   background-color: var(--bg-color);
-  background: linear-gradient(134deg, var(--bg-color), var(--bg-color2));
+  /* background: linear-gradient(134deg, var(--bg-color), var(--bg-color2)); */
   background-size: 400% 400%;
-  -webkit-animation: BackgroundAnimation var(--bg-anim-duration) ease infinite;
+  /* -webkit-animation: BackgroundAnimation var(--bg-anim-duration) ease infinite;
   -moz-animation: BackgroundAnimation var(--bg-anim-duration) ease infinite;
-  animation: BackgroundAnimation var(--bg-anim-duration) ease infinite;
+  animation: BackgroundAnimation var(--bg-anim-duration) ease infinite; */
 }
 
 header,
@@ -165,8 +165,8 @@ main {
   border: var(--accent-secondary) solid 2px;
   border-radius: 10px;
   padding: 0.5em 1em;
-  background-color: var(--bg-color-dark);
-  box-shadow: 5px 5px 5px 0px var(--bg-color-dark);
+  background-color: var(--bg-card);
+  box-shadow: 5px 5px 5px 0px var(--bg-card);
 }
 
 .thesis-card {
