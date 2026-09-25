@@ -1,5 +1,19 @@
+header {
+  flex-direction: column;
+  text-align: center;
+}
+
 #p-img {
   height: 8em;
+}
+
+header div {
+  margin: 0;
+}
+
+h1 {
+  margin: 0.3em 0;
+  width: 100%;
 }
 
 main {
