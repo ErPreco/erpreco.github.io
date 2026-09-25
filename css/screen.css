@@ -48,17 +48,9 @@ footer {
   color: var(--text-color);
 }
 
-main {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 3em;
-}
-
 h1 {
-  margin-top: 0.6em;
-  text-align: center;
   font-size: 2.3em;
+  margin: 0.3em 0 0.8em;
 }
 
 h2 {
@@ -116,7 +108,21 @@ a {
 /* #region HEADER */
 
 header {
-  padding-top: 3em;
+  margin: 0 auto;
+  padding: 3em;
+  max-width: 600px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+header div {
+  margin-left: 2em;
+}
+
+header div a {
+  display: block;
+  margin-top: 0.4em;
 }
 
 #p-img-container {
@@ -133,6 +139,12 @@ header {
 /* ====================================== */
 
 /* #region MAIN */
+
+main {
+  margin: 0 auto;
+  padding: 1.5em 3em 3em;
+  max-width: 1200px;
+}
 
 .thesis-card,
 .card {
