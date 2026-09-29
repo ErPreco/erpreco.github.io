@@ -13,7 +13,7 @@
   --bg-color-dark: #d3f2b4;
   --bg-card: #f9fae9;
   --text-color: rgb(85, 39, 39);
-  --accent: #00ae00;
+  --accent: #00c500;
   --accent-secondary: #0d710b;
 
   --bg-anim-duration: 15s
@@ -35,11 +35,7 @@ html {
 
 body {
   background-color: var(--bg-color);
-  /* background: linear-gradient(134deg, var(--bg-color), var(--bg-color2)); */
   background-size: 400% 400%;
-  /* -webkit-animation: BackgroundAnimation var(--bg-anim-duration) ease infinite;
-  -moz-animation: BackgroundAnimation var(--bg-anim-duration) ease infinite;
-  animation: BackgroundAnimation var(--bg-anim-duration) ease infinite; */
 }
 
 header,
@@ -50,7 +46,7 @@ footer {
 
 h1 {
   font-size: 2.3em;
-  margin: 0.2em 0 0.8em;
+  margin-top: 0.1em;
 }
 
 h2 {
@@ -121,17 +117,21 @@ header {
   justify-content: space-between;
 }
 
-header div {
+#p-img {
+  height: 10em;
+}
+
+header>div {
   margin-left: 2em;
 }
 
-header div a {
+.header-links {
   display: block;
   margin-top: 0.4em;
 }
 
-#p-img {
-  height: 10em;
+.header-links>a {
+  margin-right: 0.7em;
 }
 
 @media screen and (max-width: 580px) {
