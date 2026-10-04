@@ -14,24 +14,35 @@
   <link rel="stylesheet" href="./css/screen.css" />
   <link rel="stylesheet" href="./css/mid.css" media="screen and (max-width: 615px)" />
   <link rel="stylesheet" href="./css/mini.css" media="screen and (max-width: 480px)" />
+  <!-- JS -->
+  <script src="./js/theme.js" defer></script>
 </head>
 
 <body>
   <header>
-    <a href="https://github.com/ErPreco" target="_blank">
-      <img src="https://github.com/ErPreco.png" alt="profile image" id="p-img">
-    </a>
-    <div>
-      <h1>Andrea Precoma</h1>
-      <a href="https://github.com/ErPreco" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/andreaprecoma" target="_blank">LinkedIn</a>
+    <div id="header-info">
+      <a href="https://github.com/ErPreco" target="_blank">
+        <img src="https://github.com/ErPreco.png" alt="profile image" id="p-img">
+      </a>
+      <div>
+        <h1>Andrea Precoma</h1>
+        <a href="https://github.com/ErPreco" target="_blank" class="header-links">GitHub</a>
+        <a href="https://www.linkedin.com/in/andreaprecoma" target="_blank" class="header-links">LinkedIn</a>
+        <div class="header-links">
+          <a href="./assets/Andrea Precoma - CV (ITA).pdf" download>CV (ITA)</a>
+          <a href="./assets/Andrea Precoma - CV (ENG).pdf" download>CV (ENG)</a>
+        </div>
+      </div>
     </div>
+
+    <button class="theme-switch" id="themeSwitch" role="switch" aria-labelledby="label" aria-checked="false"></button>
   </header>
 
   <main>
     <p>
       I am currently attending the <strong>Master in Computer Science</strong> at the <a href="https://www.unitn.it/en"
-        target="_blank">University of Trento</a>, Italy, focusing on the <strong class="box">Human-Computer Interaction</strong> and
+        target="_blank">University of Trento</a>, Italy, focusing on the <strong class="box">Human-Computer
+        Interaction</strong> and
       <strong>Machine
         Learning</strong> fields. I achieved my Bachelor's degree in Computer Science at the <a
         href="https://www.unipd.it/en" target="_blank">University of Padua</a>, Italy, in July 2025.
@@ -53,7 +64,10 @@
           <span class="label">C#</span>
         </p>
         <p class="desc">
-          The thesis project involved the development of a VR application featuring hand tracking, designed for the training of personnel operating industrial machinery. The role and limits of interactors and interactables were studied, augmenting the given Meta building blocks with custom interactions for both hands and controllers. Some images are blurred due to sensitive materials of the host company.
+          The thesis project involved the development of a VR application featuring hand tracking, designed for the
+          training of personnel operating industrial machinery. The role and limits of interactors and interactables
+          were studied, augmenting the given Meta building blocks with custom interactions for both hands and
+          controllers. Some images are blurred due to sensitive materials of the host company.
         </p>
 
         <div class="info">
