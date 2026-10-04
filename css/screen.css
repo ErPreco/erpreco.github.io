@@ -1,3 +1,27 @@
+:root {
+  --bg-color: #fefff6;
+  --bg-color-dark: #d3f2b4;
+  --bg-card: #f9fae9;
+  --text-color: #552727;
+  --accent: #00c500;
+  --accent-secondary: #0d710b;
+
+  --track-off: #00c500;
+  --knob: #ffffff;
+}
+
+[data-theme="dark"] {
+  --bg-color: #220d3e;
+  --bg-color-dark: #120721;
+  --bg-card: #1b0b2f;
+  --text-color: #ffffff;
+  --accent: #e69a3d;
+  --accent-secondary: #a594f9;
+
+  --track-on: #e69a3d;
+  --knob: #ffffff;
+}
+
 *,
 *::after,
 *::before {
@@ -6,17 +30,6 @@
   box-sizing: border-box;
   font-family: 'Vend Sans', sans-serif;
   line-height: 1.5em;
-}
-
-:root {
-  --bg-color: #fefff6;
-  --bg-color-dark: #d3f2b4;
-  --bg-card: #f9fae9;
-  --text-color: rgb(85, 39, 39);
-  --accent: #00c500;
-  --accent-secondary: #0d710b;
-
-  --bg-anim-duration: 15s
 }
 
 @font-face {
@@ -109,9 +122,12 @@ a {
 /* #region HEADER */
 
 header {
-  margin: 0 auto;
   padding: 3em;
-  max-width: 600px;
+}
+
+#header-info {
+  margin: 0 auto;
+  max-width: 480px;
 
   display: flex;
   justify-content: space-between;
@@ -121,7 +137,7 @@ header {
   height: 10em;
 }
 
-header>div {
+#header-info>div {
   margin-left: 2em;
 }
 
@@ -142,6 +158,57 @@ header>div {
   h1 {
     margin-top: 0;
     width: 90%;
+  }
+}
+
+.theme-switch {
+  float: right;
+  position: absolute;
+  top: 1.5em;
+  right: 4%;
+  width: 56px;
+  height: 32px;
+  flex: none;
+  border: 0;
+  padding: 0;
+  border-radius: 999px;
+  background: var(--track-off);
+  cursor: pointer;
+  transition: background .25s;
+}
+
+.theme-switch::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--knob);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+  transition: transform .25s cubic-bezier(.4, 0, .2, 1);
+}
+
+.theme-switch[aria-checked="true"] {
+  background: var(--track-on);
+}
+
+.theme-switch[aria-checked="true"]::after {
+  transform: translateX(24px);
+}
+
+.theme-switch:focus-visible {
+  outline: 3px solid var(--track-on);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .theme-switch,
+  .theme-switch::after,
+  body {
+    transition: none;
   }
 }
 
