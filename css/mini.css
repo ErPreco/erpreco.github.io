@@ -7,7 +7,7 @@
   height: 8em;
 }
 
-header div {
+#header-info>div {
   margin: 0;
 }
 
