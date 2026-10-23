@@ -161,6 +161,10 @@ header {
   }
 }
 
+header>h3 {
+  margin-top: 1.5em;
+}
+
 .theme-switch {
   float: right;
   position: absolute;
