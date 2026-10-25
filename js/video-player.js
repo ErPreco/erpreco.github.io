@@ -10,7 +10,14 @@ function setupPlayer(player) {
   const flash = player.querySelector('.flash');
   const mute = player.querySelector('.mute');
 
-  // Play / Pause with 1s flash icon
+  // Reload video and show poster
+  video.addEventListener('ended', () => {
+    clearTimeout(flashTimer);
+    flash.classList.remove('show');
+    video.load();
+  });
+
+  // Show icon with 1s flash
   let flashTimer;
   function showFlash(kind) {
     flash.innerHTML = ICONS[kind];
@@ -19,15 +26,24 @@ function setupPlayer(player) {
     flashTimer = setTimeout(() => flash.classList.remove('show'), 1000);
   }
 
+  // Play / Pause
   video.addEventListener('click', () => {
-    if (video.paused) { video.play(); showFlash('play'); }
-    else { video.pause(); showFlash('pause'); }
+    if (video.paused) {
+      video.play();
+      showFlash('play');
+    } else {
+      video.pause();
+      showFlash('pause');
+    }
   });
 
   // Keyboard support (Space) when the video is focused
   video.tabIndex = 0;
   video.addEventListener('keydown', e => {
-    if (e.code === 'Space') { e.preventDefault(); video.click(); }
+    if (e.code === 'Space') {
+      e.preventDefault();
+      video.click();
+    }
   });
 
   // Mute / Unmute
@@ -35,7 +51,10 @@ function setupPlayer(player) {
     mute.innerHTML = video.muted ? ICONS.muted : ICONS.volume;
     mute.setAttribute('aria-label', video.muted ? 'Unmute' : 'Mute');
   }
-  mute.addEventListener('click', () => { video.muted = !video.muted; updateMuteButton(); });
+  mute.addEventListener('click', () => {
+    video.muted = !video.muted;
+    updateMuteButton();
+  });
   updateMuteButton();
 }
 

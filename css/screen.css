@@ -265,6 +265,14 @@ h3 {
   border-radius: 1em;
 }
 
+.wip {
+  margin: 1.3em;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: var(--accent);
+}
+
 .desc {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -289,7 +297,7 @@ h3 {
   display: block;
   margin: 0 auto;
   width: 100%;
-  border-radius: 7px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
