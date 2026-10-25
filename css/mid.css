@@ -13,9 +13,13 @@ main>p {
   margin-right: 1em;
 }
 
-.thesis-card {
+.wide-card {
   margin-left: 3%;
   margin-right: 3%;
+}
+
+.player {
+  width: 100%;
 }
 
 .card {

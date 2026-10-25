@@ -228,7 +228,7 @@ main {
   max-width: 1200px;
 }
 
-.thesis-card,
+.wide-card,
 .card {
   display: flex;
   flex-direction: column;
@@ -240,7 +240,7 @@ main {
   box-shadow: 5px 5px 5px 0px var(--bg-card);
 }
 
-.thesis-card {
+.wide-card {
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -270,6 +270,79 @@ h3 {
   margin-bottom: 0.5em;
   text-align: justify;
   flex-grow: 1;
+}
+
+.player {
+  position: relative;
+  width: 65%;
+  margin: 1em auto;
+  line-height: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .player {
+    width: 80%;
+  }
+}
+
+.player video {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.flash {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4em;
+  height: 4em;
+  transform: translate(-50%, -50%) scale(0.9);
+  border-radius: 50%;
+  background: rgba(0, 0, 0, .55);
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.flash.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.flash svg {
+  width: 2em;
+  height: 2em;
+  fill: #fff;
+}
+
+.mute {
+  position: absolute;
+  right: 0.8em;
+  bottom: 0.6em;
+  width: 3em;
+  height: 3em;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.55);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.mute:hover {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.mute svg {
+  width: 1.3em;
+  height: 1.3em;
+  fill: #fff;
 }
 
 .info,
