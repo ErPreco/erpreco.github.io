@@ -26,3 +26,8 @@ main>p {
   width: 100%;
   min-width: 0;
 }
+
+.collapsible::before,
+.collapsible::after {
+  width: 0;
+}

@@ -90,12 +90,64 @@ h2::after {
   margin-right: -50%;
 }
 
+.collapsible {
+  width: 100%;
+  text-align: center;
+  color: var(--text-color);
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-top: 1.3em;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.collapsible::before,
+.collapsible::after {
+  background-color: var(--text-color);
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 22vw;
+  max-width: 11em;
+}
+
+.collapsible::before {
+  margin-left: -50%;
+}
+
+.collapsible::after {
+  margin-right: -50%;
+}
+
 @media screen and (max-width: 768px) {
 
   h2::before,
-  h2::after {
+  h2::after,
+  .collapsible::before,
+  .collapsible::after {
     width: 15vw;
   }
+}
+
+.arrow {
+  font-size: 0.8em;
+  padding: 0 0.5em;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.collapsible.active .arrow {
+  transform: rotate(180deg);
+}
+
+.collapse-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 main>p {
