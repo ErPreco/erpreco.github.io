@@ -141,6 +141,10 @@ header {
   margin-left: 2em;
 }
 
+#header-info h1 {
+  margin-bottom: 0.8em;
+}
+
 .header-links {
   display: block;
   margin-top: 0.4em;
