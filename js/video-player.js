@@ -51,11 +51,13 @@ function setupPlayer(player) {
     mute.innerHTML = video.muted ? ICONS.muted : ICONS.volume;
     mute.setAttribute('aria-label', video.muted ? 'Unmute' : 'Mute');
   }
-  mute.addEventListener('click', () => {
-    video.muted = !video.muted;
+  if (mute) {
+    mute.addEventListener('click', () => {
+      video.muted = !video.muted;
+      updateMuteButton();
+    });
     updateMuteButton();
-  });
-  updateMuteButton();
+  }
 }
 
 document.querySelectorAll('.player').forEach(setupPlayer);
