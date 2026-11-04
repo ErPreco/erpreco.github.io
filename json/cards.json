@@ -1,0 +1,234 @@
+{
+  "master": [
+    {
+      "title": "Better Buses",
+      "labels": [
+        "Fog architecture",
+        "Kubernetes",
+        "OpenNebula",
+        "VirtualBox"
+      ],
+      "desc": "A system where sensors are attached to buses and bus stops to track traffic and delays. A [K3s](https://k3s.io) cluster is defined with a master node and two workers, while [OpenNebula](https://opennebula.io) manages the corresponding VMs. The entire system is hosted by an Ubuntu Server VM on [VirtualBox](https://www.virtualbox.org).",
+      "refs": [
+        {
+          "label": "Organization",
+          "text": "Better Buses",
+          "url": "https://github.com/Better-Buses"
+        }
+      ],
+      "date": "August 2026"
+    },
+    {
+      "title": "Distributed Intelligence",
+      "labels": [
+        "Java",
+        "Akka",
+        "Gradle"
+      ],
+      "desc": "A quorum-based total order broadcast protocol for distributed intelligence databases. A codebase was integrated with all the logic of the protocols, in particular read/write management and leader election.",
+      "refs": [
+        {
+          "label": "Organization",
+          "text": "Distributed Intelligence",
+          "url": "https://github.com/DS-DistributedIntelligence"
+        }
+      ],
+      "date": "July 2026"
+    },
+    {
+      "title": "CLIP studies",
+      "labels": [
+        "Deep Learning",
+        "Colab"
+      ],
+      "desc": "Research project in which a baseline with [CLIP](https://openai.com/index/clip) was provided, with the goal of retrieving images similar to aource image conditioned with some text (e.g. \"add smile\"). Techniques to improve the model were investigated, such as an adapter on top of CLIP, [CLAY](https://arxiv.org/html/2604.11539v1) and more.",
+      "refs": [
+        {
+          "label": "Organization",
+          "text": "CLIP studies",
+          "url": "https://github.com/CLIP-studies"
+        }
+      ],
+      "date": "July 2026"
+    },
+    {
+      "title": "Autonomous software agent",
+      "labels": [
+        "JavaScript",
+        "Node.js"
+      ],
+      "desc": "Agent_Perry is a BDI agent which goal is to play the multiplayer game [Deliveroo.js](https://github.com/unitn-ASA/Deliveroo.js), an open source project designed for this assignment. Players need to deliver parcels while reacting to other agents' actions, environment changes and special tiles of the map.",
+      "refs": [
+        {
+          "label": "Organization",
+          "text": "Agent Perry ASA",
+          "url": "https://github.com/AgentPerryASA"
+        }
+      ],
+      "date": "June 2026"
+    },
+    {
+      "title": "Dream Spot",
+      "labels": [
+        "Innovation",
+        "Business plan"
+      ],
+      "desc": "DreamSpot is an all-in-one platform that, with the help of Artificial Intelligence, will guide the user into creating his/her very personal travel by providing suggestions, feasible modifications and adequate accommodations.",
+      "refs": [
+        {
+          "label": "Web site",
+          "text": "Dream Spot",
+          "url": "https://dreamspotai.github.io/DreamSpot"
+        },
+        {
+          "label": "Organization",
+          "text": "Dream Spot AI",
+          "url": "https://github.com/DreamSpotAI"
+        }
+      ],
+      "refLabel": "Organization",
+      "refText": "Dream Spot AI",
+      "refUrl": "https://github.com/DreamSpotAI",
+      "date": "December 2025"
+    },
+    {
+      "title": "Steal it",
+      "labels": [
+        "VR",
+        "3D",
+        "Multiplayer",
+        "C#"
+      ],
+      "desc": "Go to [most valuable projects](#steal-it-mvp).",
+      "refs": [
+        {
+          "label": "Organization",
+          "text": "Steal it",
+          "url": "https://github.com/Steal-it"
+        }
+      ],
+      "date": "July 2026"
+    }
+  ],
+  "bachelor": [
+    {
+      "title": "Greenhouse monitoring simulator",
+      "labels": [
+        "C++",
+        "Qt"
+      ],
+      "desc": "A project mainly focused on OOP using C++, leveraging on complex class hierarchies and some design patterns such as Observer and Visitor. It also involves a simple GUI on which monitoring the sensors.",
+      "refs": [
+        {
+          "label": "Repository",
+          "text": "Greenhouse Monitoring",
+          "url": "https://github.com/ErPreco/Greenhouse-Monitoring"
+        }
+      ],
+      "date": "July 2024"
+    },
+    {
+      "title": "Music shop database",
+      "labels": [
+        "PostgreSQL"
+      ],
+      "desc": "Design and implementation of a database with some requirements on table relations and indexing. In addition, a simple program in C is provided to execute some queries.",
+      "refs": [
+        {
+          "label": "Repository",
+          "text": "Buddy Music Shop",
+          "url": "https://github.com/ErPreco/BuddyMusicShop"
+        }
+      ],
+      "date": "June 2024"
+    }
+  ],
+  "personal": [
+    {
+      "title": "Complementary",
+      "labels": [
+        "Unity3D",
+        "Singleplayer",
+        "Windows / WebGL",
+        "C#"
+      ],
+      "desc": "A 3D platformer game in which the player has to alternate black and white platforms and obstacles in order to complete the levels.",
+      "refs": [
+        {
+          "label": "Demo",
+          "text": "itch.io",
+          "url": "https://aprecoma.itch.io/complementary"
+        },
+        {
+          "label": "Repository",
+          "text": "Complementary",
+          "url": "https://github.com/ErPreco/Complementary"
+        }
+      ],
+      "date": "October 2024"
+    },
+    {
+      "title": "Up Up Up",
+      "labels": [
+        "Unity3D",
+        "Singleplayer",
+        "Android / WebGL",
+        "C#"
+      ],
+      "desc": "A 2D game in which the player needs to jump and stick to small floating islands, trying to go as high as possible.",
+      "refs": [
+        {
+          "label": "Demo",
+          "text": "itch.io",
+          "url": "https://aprecoma.itch.io/up-up-up"
+        },
+        {
+          "label": "Repository",
+          "text": "Up Up Up",
+          "url": "https://github.com/ErPreco/Up-Up-Up"
+        }
+      ],
+      "date": "September 2023"
+    },
+    {
+      "title": "NN for digits recognition",
+      "labels": [
+        "Python",
+        "Cuda"
+      ],
+      "desc": "A Neural Network trained on [TMNIST](https://www.kaggle.com/datasets/nimishmagre/tmnist-typeface-mnist) dataset. A GUI allows to save, upload, modify, train and test a model. Finally, a canvas permits you to draw digits that the model is asked to predict.",
+      "refs": [
+        {
+          "label": "Repository",
+          "text": "Digits Recognition",
+          "url": "https://github.com/ErPreco/Digits-Recognition"
+        }
+      ],
+      "date": "August 2024"
+    },
+    {
+      "title": "Blind Trust",
+      "labels": [
+        "Unity3D",
+        "Netcode for GameObject",
+        "Multiplayer",
+        "Windows",
+        "C#"
+      ],
+      "desc": "Go to [most valuable projects](#blind-trust-mvp).",
+      "refs": [
+        {
+          "label": "Demo",
+          "text": "itch.io",
+          "url": "https://aprecoma.itch.io/blind-trust"
+        },
+        {
+          "label": "Repository",
+          "text": "Blind Trust",
+          "url": "https://github.com/ErPreco/Blind-Trust"
+        }
+      ],
+      "date": "September 2026"
+    }
+  ]
+}
