@@ -194,16 +194,12 @@ header {
 }
 
 #header-info h1 {
-  margin-bottom: 0.8em;
+  margin-bottom: 0.2em;
 }
 
 .header-links {
   display: block;
-  margin-top: 0.4em;
-}
-
-.header-links>a {
-  margin-right: 0.7em;
+  margin-top: 0.3em;
 }
 
 @media screen and (max-width: 580px) {
